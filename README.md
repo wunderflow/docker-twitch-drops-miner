@@ -14,7 +14,7 @@ Docker-Compose
 services:
   tmine:
     build:
-      context: https://github.com/wunderflow/docker-twitch-drops-miner.git
+      context: https://github.com/wunderflow/docker-twitch-drops-miner.git#main
       dockerfile: Dockerfile
     #fixes portainer pull button 
     pull_policy: build
