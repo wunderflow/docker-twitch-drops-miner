@@ -13,8 +13,8 @@ ENV APP_ICON_URL https://raw.githubusercontent.com/Windows200000/TwitchDropsMine
 # Install Twitch Drops Miner
 RUN apt-get update -y
 RUN apt-get install -y wget unzip libc6 gir1.2-appindicator3-0.1 language-pack-en fonts-noto-color-emoji
-#temporary fork with PersistedQueryNotFound fix
-RUN wget -P /tmp/ https://github.com/wunderflow/TwitchDropsMiner-updated/releases/download/dev-build/Twitch.Drops.Miner.Linux.PyInstaller.zip
+#swap to DevilXD dev build
+RUN wget -P /tmp/ https://github.com/DevilXD/TwitchDropsMiner/releases/download/dev-build/Twitch.Drops.Miner.Linux.PyInstaller.zip
 #RUN wget -P /tmp/ https://github.com/Windows200000/TwitchDropsMiner-updated/releases/download/${TDM_VERSION_TAG}/Twitch.Drops.Miner.Linux.PyInstaller.zip
 RUN mkdir /TwitchDropsMiner
 RUN unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" >/TwitchDropsMiner/TwitchDropsMiner
