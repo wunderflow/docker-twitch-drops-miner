@@ -16,7 +16,7 @@ RUN apt-get install -y wget unzip libc6 gir1.2-appindicator3-0.1 language-pack-e
 
 RUN wget -P /tmp/ https://github.com/DevilXD/TwitchDropsMiner/releases/download/dev-build/Twitch.Drops.Miner.Linux.PyInstaller-x86_64.zip
 RUN mkdir /TwitchDropsMiner
-RUN unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" >/TwitchDropsMiner/TwitchDropsMiner
+RUN unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller-x86_64.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" >/TwitchDropsMiner/TwitchDropsMiner
 RUN chmod +x /TwitchDropsMiner/TwitchDropsMiner
 RUN rm -rf /tmp
 
